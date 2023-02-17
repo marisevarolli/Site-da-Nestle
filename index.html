@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestlé</title>
+</head>
+<style>
+    a:link,
+    a:visited {
+        background-color: white;
+        color: black;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a:active {
+        background-color: rgb(255, 255, 255);
+        color: white;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    html {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .header {
+        background-color: #ffffff;
+        color: rgb(7, 28, 67);
+        padding: 15px;
+    }
+
+    .menu {
+        list-style-type: lower-alpha;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    .menu li:hover {
+        background-color: rgb(0, 21, 249);
+    }
+
+    .aside {
+        background-color: rgb(0, 213, 255);
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    .footer {
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: start;
+        font-size: 12px;
+        padding: 75px;
+    }
+
+    img {
+        text-align: right;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+        align-items: baseline;
+        text-align: center;
+    }
+
+    #para1 {
+        text-align: end;
+    }
+
+    h2 {
+        font-size: small;
+        text-align: center;
+    }
+
+    .pagination {
+        display: inline-block;
+    }
+
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+    }
+
+    .pagination a.active {
+        background-color: #058eff;
+        color: white;
+        border: 1px solid #2d00f5;
+    }
+
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+    }
+</style>
+
+<body>
+    <div class="pagination">
+        <a href="#" class="active">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Lançamentos</a>
+        <a href="#">Parceiros</a>
+    </div>
+    <div class="flex-container">
+        <div style="align-self: center;"> </div>
+        <h2></h2>
+        <a href="https://twitter.com/nestle" target="_blank"> <img width="30px"
+                src="https://1000marcas.net/wp-content/uploads/2019/11/Twitter-logo.png" alt="Logo do twitter">
+        </a>
+        <h2></h2>
+        <a href="https://www.tiktok.com/@receitasnestlebr" target="_blank"> <img width="30px"
+                src="https://purepng.com/public/uploads/large/tik-tok-logo-6fh.png" alt="Logo do TikTok">
+        </a>
+        <h2></h2>
+        <a href="https://www.youtube.com/user/NestleCorporate" target="_blank"> <img width="30px"
+                src="https://th.bing.com/th/id/OIP.OVUMFVp8elGfMYh-27fTLAHaFO?pid=ImgDet&rs=1" alt="Logo do Youtube">
+        </a>
+        <h2></h2>
+        <a href="https://pt-br.facebook.com/Nestle.Brasil/" target="_blank"> <img style="width: 30px;"
+                src="https://th.bing.com/th/id/R.6c3ea8b640f61035021c20dd5dcd37fa?rik=31mzN9qX%2bAR9pA&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f377-3776210_facebook-logo-vector-logovectornet-logo-facebook-2019-png.png&ehk=feGZ0i4yauVvpdtQu%2bTAeLkp%2bpCt2QN1zx7GrMwtQuA%3d&risl=&pid=ImgRaw&r=0"
+                alt="Logo do Facebook">
+        </a>
+        <h2></h2>
+        <a href="https://www.instagram.com/Nestle/" target="_blank"><img text style="width: 30px;"
+                src="https://www.freepngimg.com/download/logo/62372-computer-neon-instagram-icons-hd-image-free-png.png"
+                alt="Imagem do Instagram"></a>
+    </div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>Chocolates</li>
+                <li>Bebidas</li>
+                <li>Cafés</li>
+                <li>Cereais</li>
+                <li>Biscoitos</li>
+                <li>Sorvetes</li>
+            </ul>
+        </div>
+        <div class="col-6 col-s-9">
+            <h1>A loja</h1>
+            <p> Acreditamos no poder dos alimentos para melhorar vidas. A boa comida nutre e deleita os sentidos. Ajuda
+                as crianças a crescerem saudáveis, os animais de estimação prosperam, os pais envelhecem com elegância e
+                todos vivem a vida ao máximo. A boa comida nos une. A boa comida também respeita o nosso planeta e
+                protege os recursos para as gerações futuras.
+            </p>
+            <div class="col-3 col-s-12">
+                <div class="aside">
+                    <h3>Quem somos?</h3>
+                    <p>A Nestlé está há 100 anos presente em 99% dos lares brasileiros, líder mundial em alimentos e
+                        bebidas atua em 190 países com o propósito de revelar o poder dos alimentos para melhorar a
+                        qualidade de vida de todos, hoje e nas próximas gerações.</p>
+                    <h3>Nossa história</h3>
+                    <p>Fizemos muitas coisas</p>
+                    <h3>Promoções</h3>
+                    <p>A Nestlé oferece promoções incríveis para toda a família. Confira abaixo as últimas que
+                        aconteceram, e as que você ainda pode participar!</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p id="para1"><img width="100px"
+                    src="https://th.bing.com/th/id/OIP.enBsan5d62bWEyPwMC83JwHaG2?pid=ImgDet&rs=1" alt="Logo da Nestlé">
+            </p>
+        </div>
+
+</body>
+
+</html>
