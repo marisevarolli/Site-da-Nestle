@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contatos</title>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/w3images/mac.jpg");
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+        .w3-container{
+            background-color: rgb(180, 196, 207);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+            onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="http://127.0.0.1:5500/index.html" class="w3-bar-item w3-button w3-wide">INÍCIO</a>
+            <div class="w3-right w3-hide-small">
+                <a href="http://127.0.0.1:5500/lan%C3%A7amentos.html" class="w3-bar-item w3-button"></i>LANÇAMENTOS</a>
+                <a href="http://127.0.0.1:5500/produtos.html" class="w3-bar-item w3-button">PRODUTOS</a>
+                <a href="http://127.0.0.1:5500/hist%C3%B3ria.html" class="w3-bar-item w3-button">HISTÓRIA</a>
+                <a href="http://127.0.0.1:5500/contatos.html" class="w3-bar-item w3-button"><i
+                        class="fa fa-envelope"></i> CONTATOS</a>
+            </div>
+            <div class="flex-container">
+                <img width="60px"
+                    src="https://4.bp.blogspot.com/-lzMMu6OXfU4/UBVtPF0gDjI/AAAAAAAAANQ/6H5pcmEV9Tg/s1600/739_15.jpg"
+                    alt="Logo da Nestle">
+            </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="w3-container" style="border: 1cm;" style="padding:128px 16px" id="contact">
+            <h3 class="w3-center">CONTATOS</h3>
+            <p class="w3-center w3-large">Fale conosco:</p>
+            <div style="margin-top:48px">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> São Paulo, BR</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefone: +00 151515</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: nestlezinha@gmail.com</p>
+                <br>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-border" type="text" placeholder="Nome" required name="Nome"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Assunto" required name="Assunto"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Mensagem" required name="Mensagem"></p>
+                    <p>
+                        <button class="w3-button w3-black" type="submit">
+                            <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+                        </button>
+                    </p>
+                </form>
+                <!-- Image of location/map -->
+                <img src="https://www.euqueronestle.com.br//themes/custom/nest/images/local/eqn-rodape.png" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </footer>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HISTÓRIA</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body,
         h1,
         h2,
@@ -16,7 +21,7 @@
         h4,
         h5,
         h6 {
-            font-family: "Raleway", sans-serif
+            font-family: "Raleway", sans-serif;
         }
 
         body,
@@ -35,16 +40,117 @@
         .w3-bar .w3-button {
             padding: 16px;
         }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: rgb(255, 255, 255);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        .right::after {
+            left: -16px;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .timeline::after {
+                left: 31px;
+            }
+
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            .left::after,
+            .right::after {
+                left: 15px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+        body{
+            background-color: rgb(199, 199, 199);
+        }
+        img{
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body>
-</div>
-<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-    onclick="w3_open()">
-    <i class="fa fa-bars"></i>
-</a>
-</div>
+    <div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
             <a href="http://127.0.0.1:5500/index.html" class="w3-bar-item w3-button w3-wide">INÍCIO</a>
@@ -52,31 +158,94 @@
                 <a href="http://127.0.0.1:5500/lan%C3%A7amentos.html" class="w3-bar-item w3-button"></i>LANÇAMENTOS</a>
                 <a href="http://127.0.0.1:5500/produtos.html" class="w3-bar-item w3-button">PRODUTOS</a>
                 <a href="http://127.0.0.1:5500/hist%C3%B3ria.html" class="w3-bar-item w3-button">HISTÓRIA</a>
-                <a href="http://127.0.0.1:5500/contatos.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTATOS</a>
+                <a href="http://127.0.0.1:5500/contatos.html" class="w3-bar-item w3-button"><i
+                        class="fa fa-envelope"></i> CONTATOS</a>
             </div>
-    </div>
-    <script>
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
+            <div class="flex-container">
+                <img width="60px"
+                    src="https://4.bp.blogspot.com/-lzMMu6OXfU4/UBVtPF0gDjI/AAAAAAAAANQ/6H5pcmEV9Tg/s1600/739_15.jpg"
+                    alt="Logo da Nestle">
+            </div>
+        </div>
+            <script>
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
 
-        var mySidebar = document.getElementById("mySidebar");
+                var mySidebar = document.getElementById("mySidebar");
 
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-            } else {
-                mySidebar.style.display = 'block';
-            }
-        }
+                function w3_open() {
+                    if (mySidebar.style.display === 'block') {
+                        mySidebar.style.display = 'none';
+                    } else {
+                        mySidebar.style.display = 'block';
+                    }
+                }
 
-        function w3_close() {
-            mySidebar.style.display = "none";
-        }
-    </script>
+                function w3_close() {
+                    mySidebar.style.display = "none";
+                }
+            </script>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2>1866-1905</h2>
+                        <p>Nossa história começa em 1866, quando a Anglo-Swiss Condensed Milk Company abre a primeira fábrica de leite condensado da Europa na Suíça. Henri Nestlé desenvolve um alimento infantil revolucionário em 1867, e em 1905 a empresa criada por ele se funde com a Anglo-Swiss para formar o que hoje é conhecido como Grupo Nestlé. Durante esse período de crescimento das cidades, aumento das estradas de ferro e dos navios a vapor, ocorre uma redução nos custos das commodities, o que estimula o comércio internacional de bens de consumo.</p>
+                        <img width="300px" src="https://www.nestle.com.br/sites/g/files/pydnoa436/files/styles/full_width_image_1920x795_/public/2021-06/about-us-history_0.jpg?itok=fgJf1f-i" alt="imagem nestlé">
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>1905-1913</h2>
+                        <p>Em 1905, a Nestlé & Anglo Swiss tem mais de 20 fábricas, e começa a usar subsidiárias no exterior para estabelecer uma rede de vendas que abrange a África, Ásia, América Latina e Austrália. A empresa também se beneficia do período de prosperidade conhecido como “Belle Époque” ou “Bela Época”, marcada pelo forte desenvolvimento artístico, cultural e tecnológico das cidades europeias e se torna uma empresa global de produtos lácteos.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>1914-1918</h2>
+                        <p>O início da guerra em 1914 resulta em um aumento de demanda por leite condensado e chocolate, mas a escassez de matéria prima e as limitações do comércio entre fronteiras prejudica a produção da Nestlé & Anglo-Swiss. Para solucionar esse problema, a empresa adquire instalações de processamento nos Estados Unidos e na Austrália, e ao final da guerra conta com 40 fábricas.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>1919-1938</h2>
+                        <p>Depois da guerra, a demanda militar por leite condensado declina, causando uma importante crise na Nestlé & Anglo-Swiss em 1921. A empresa se recupera, mas é novamente abalada pela Quebra de Wall Street em 1929, que reduz o poder de compra do consumidor. Contudo, essa época tem muitos aspectos positivos: a administração da empresa se profissionaliza, a pesquisa é centralizada e produtos pioneiros, como o Nescafé, são lançados.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>1939-1947</h2>
+                        <p>O início da Segunda Guerra Mundial em 1939 afeta praticamente todos os mercados, mas a Nestlé & Anglo-Swiss continua a operar nessas circunstâncias difíceis, fornecendo tanto para os civis como para as forças armadas. Em 1947, a empresa adiciona as sopas Maggi à sua linha de produtos e adota o nome de Nestlé Alimentana.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>1948-1959</h2>
+                        <p>O período pós-guerra é marcado por uma crescente prosperidade, e as pessoas nos Estados Unidos e na Europa adquirem máquinas que tornam a vida mais fácil, como refrigeradores e freezers. Também preferem alimentos mais convenientes, e a Nestlé Alimentana atende a essa necessidade com novos produtos que incluem Nesquik e as refeições prontas Maggi.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>1960-1980</h2>
+                        <p>Aquisições permitem que a Nestlé entre em novas áreas de crescimento rápido como os alimentos congelados, e expanda seus negócios tradicionais em leite, café e alimentos enlatados. Na década de 1970 a empresa diversifica na área de produtos farmacêuticos e cosméticos. Começa a atrair críticas de grupos ativistas que alegam que seu marketing de alimentos infantis é antiético. Posteriormente, a Nestlé se torna a primeira empresa a aplicar o código da OMS sobre substitutos do leite materno em todos os seus negócios.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>1981-2005</h2>
+                        <p>Após anos de crescimento, a Nestlé se desfaz de marcas pouco lucrativas e promove aquelas que atendem a necessidade crescente dos consumidores por produtos cada vez mais saudáveis em linha com sua aspiração de oferecer “Nutrição, Saúde e Bem-Estar”. A empresa cresce nos Estados Unidos, na Europa Oriental e na Ásia, e almeja a liderança global em águas, sorvetes e alimentação animal.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2006-HOJE</h2>
+                        <p>A Nestlé formaliza a abordagem de Criação de Valor Compartilhado para seus negócios pela primeira vez, e lança os programas Nestlé Cocoa Plan e Nescafé Plan para desenvolver, cada vez mais, cadeias de produção sustentáveis de cacau e café. Enquanto consolida sua posição nos segmentos tradicionais, fórmulas infantis e alimentos congelados, a Nestlé reforça seus esforços na nutrição médica.</p>
+                    </div>
+                </div>
+            </div>
 </body>
 
 </html>

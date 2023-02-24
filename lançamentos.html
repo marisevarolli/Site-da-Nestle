@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lançamentos</title>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/w3images/mac.jpg");
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(232, 200, 166);
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 50px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+            onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="http://127.0.0.1:5500/index.html" class="w3-bar-item w3-button w3-wide">INÍCIO</a>
+            <div class="w3-right w3-hide-small">
+                <a href="http://127.0.0.1:5500/lan%C3%A7amentos.html" class="w3-bar-item w3-button"></i>LANÇAMENTOS</a>
+                <a href="http://127.0.0.1:5500/produtos.html" class="w3-bar-item w3-button">PRODUTOS</a>
+                <a href="http://127.0.0.1:5500/hist%C3%B3ria.html" class="w3-bar-item w3-button">HISTÓRIA</a>
+                <a href="http://127.0.0.1:5500/contatos.html" class="w3-bar-item w3-button"><i
+                        class="fa fa-envelope"></i> CONTATOS</a>
+            </div>
+            <div class="flex-container>div">
+                <img width="60px"
+                    src="https://4.bp.blogspot.com/-lzMMu6OXfU4/UBVtPF0gDjI/AAAAAAAAANQ/6H5pcmEV9Tg/s1600/739_15.jpg"
+                    alt="Logo da Nestle">
+            </div>
+        </div>
+    </div>
+    <h1>Últimos lançamentos</h1>
+
+    <p>Confira as novidades do catálogo Nestlé.</p>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
 </body>
+
 </html>
