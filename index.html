@@ -5,7 +5,6 @@
     <title>Site da Nestlé</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -41,42 +40,57 @@
             height: auto;
             justify-content: center;
         }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+        }
+        .navbar-left{
+            display: flex;
+            justify-content: left;
+        }
+        .navbar-right{
+            display: flex;
+            justify-content: right;
+        }
+        .header {
+            padding: 40px;
+        }
+        footer {
+            padding:24px 40px
+        }
+        a:link,
+        a:visited {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            font-style: inherit;
+            text-align: right;
+            text-decoration: none;
+            display: inline-block;
+        }
     </style>
 </head>
 
 <body>
-
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="http://127.0.0.1:5500/index.html" class="w3-bar-item w3-button w3-wide">INÍCIO</a>
-            <div class="w3-right w3-hide-small">
-                <a href="http://127.0.0.1:5500/lan%C3%A7amentos.html" class="w3-bar-item w3-button"></i>LANÇAMENTOS</a>
-                <a href="http://127.0.0.1:5500/produtos.html" class="w3-bar-item w3-button">PRODUTOS</a>
-                <a href="http://127.0.0.1:5500/hist%C3%B3ria.html" class="w3-bar-item w3-button">HISTÓRIA</a>
-                <a href="http://127.0.0.1:5500/contatos.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTATOS</a>
-            </div>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="http://127.0.0.1:5500/index.html">INÍCIO</a>
             <div class="flex-container">
                 <img width="60px" src="https://4.bp.blogspot.com/-lzMMu6OXfU4/UBVtPF0gDjI/AAAAAAAAANQ/6H5pcmEV9Tg/s1600/739_15.jpg" alt="Logo da Nestle">
         </div>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-                onclick="w3_open()">
-                <i class="fa fa-bars"></i>
-            </a>
+    </div>
+            <div class="navbar-right">
+                <a href="javascript:void(0)"><i class="fa fa-search"></i></a>
+                <a href="http://127.0.0.1:5500/lan%C3%A7amentos.html"></i>LANÇAMENTOS</a>
+                <a href="http://127.0.0.1:5500/produtos.html">PRODUTOS</a>
+                <a href="http://127.0.0.1:5500/hist%C3%B3ria.html">HISTÓRIA</a>
+                <a href="http://127.0.0.1:5500/contatos.html"><i class="fa fa-envelope"></i> CONTATOS</a>
+            </div>
         </div>
-    </div>
-    <div class="flex-box-imagem-nestlé">
-        <img width="1500px" height="540px" src="https://open4business.com.ua/wp-content/uploads/2017/06/Nestle-Wallpapers.jpg" alt="Imagem chocolate da nestlé">
-    </div>
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-        style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
-        </a>
-        <a href="#produtos" onclick="w3_close()" class="w3-bar-item w3-button">PRODUTOS</a>
-        <a href="#sobrenós" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE NÓS</a>
-        <a href="#história" onclick="w3_close()" class="w3-bar-item w3-button">HISTÓRIA</a>
-        <a href="#contato" onclick="w3_close()" class="w3-bar-item w3-button">CONTATO</a>
-    </nav>
-                    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        </div>
+        <img width="1500px" height="450px" src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/280447164_4793876687406977_7898723501810576962_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=FbMzY0ZjTmYAX8RpNE5&_nc_ht=scontent-gru2-2.xx&oh=00_AfCLkqyZuIsfTvClXGCoW7pxcpAbx2NlvTrmSJPSQ8nQkA&oe=63FE4DD6" alt="Nestlé">
+                    <footer class="footer"
                         <a href="https://pt-br.facebook.com/Nestle.Brasil/" target="_blank"> <img width="20px" src="https://th.bing.com/th/id/OIP.Om6j8hk2LIZC_kE8lxiuZwHaHv?pid=ImgDet&rs=1" alt="Logo do facebookS"></a>
                         <a href="https://www.instagram.com/Nestle/" target="_blank"> <img width="20px" src="https://th.bing.com/th/id/OIP.csH9QCWlpwNJAb0cBWfiPwHaHa?pid=ImgDet&rs=1" alt="Logo do instagram"></a> 
                         <a href="https://www.tiktok.com/@receitasnestlebr" target="_blank"> <img width="20px" src="https://th.bing.com/th/id/R.920a868fafecafa30203468ee6b4f373?rik=p62p70tmYpJhdA&pid=ImgRaw&r=0" alt="Logo do Tik Tok"></i>
@@ -84,30 +98,5 @@
                         <a href="https://twitter.com/nestle" target="_blank"> <img width="20px" src="https://th.bing.com/th/id/OIP.PN-npWH5LhW1R2ONhboTYAAAAA?pid=ImgDet&rs=1" alt="Logo do Twitter"></a>
                     </div>
     </header>
-
-    <script>
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        var mySidebar = document.getElementById("mySidebar");
-
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-            } else {
-                mySidebar.style.display = 'block';
-            }
-        }
-
-        function w3_close() {
-            mySidebar.style.display = "none";
-        }
-    </script>
-
 </body>
-
 </html>
